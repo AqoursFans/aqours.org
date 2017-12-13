@@ -37,7 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny', # 開発中は全て許可
+    ],
+    'PAGE_SIZE': 10 # データ量に応じて後から調整
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
