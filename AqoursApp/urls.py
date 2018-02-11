@@ -25,6 +25,11 @@ router.register(r'users', views.UserViewSet)
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^Schedule', TemplateView.as_view(template_name="index.html")),
+    url(r'^Member/', TemplateView.as_view(template_name="index.html")),
+    url(r'^Apply', TemplateView.as_view(template_name="index.html")),
+    url(r'^Board', TemplateView.as_view(template_name="index.html")),
+    url(r'^File', TemplateView.as_view(template_name="index.html")),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
