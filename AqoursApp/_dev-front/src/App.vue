@@ -1,19 +1,20 @@
 <template>
   <div id="app">
     <header-view />
-    <img src="./assets/logo.png">
+    <menu-view />
     <router-view/>
-    <div class="button">test</div>
   </div>
 </template>
 
 <script>
 import HeaderView from './components/globals/Header/Header'
+import MenuView from './components/globals/Menu/Menu'
 
 export default {
   name: 'app',
   components: {
-    HeaderView
+    HeaderView,
+    MenuView
   }
 }
 </script>
@@ -26,6 +27,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 5rem;
+  margin-left: 10rem;
 }
 </style>
