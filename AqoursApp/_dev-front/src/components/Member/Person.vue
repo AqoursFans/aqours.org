@@ -4,7 +4,10 @@ export default {
   name: 'Person',
   data () {
     return {
-      name: 'Member Name'
+      name: 'Member Name',
+      group: 'develop',
+      age: '25',
+      e_mail: 'furi@ai.ai'
     }
   }
 }

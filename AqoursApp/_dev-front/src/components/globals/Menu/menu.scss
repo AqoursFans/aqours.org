@@ -8,9 +8,8 @@ menu {
 	background-color: #212121;
 	border-right: 1px solid #009688;
 	li {
-		width: 8rem;
+		width: 100%;
 		text-align: center;
-		padding: 1.5rem 1rem;
 		display: inline-block;
 		list-style: none;
 		cursor: pointer;
@@ -22,5 +21,7 @@ menu {
 	a {
 		text-decoration: none;
 		color: white;
+		display: block;
+		padding: 1.5rem 1rem;
 	}
 }

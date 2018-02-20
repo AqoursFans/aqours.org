@@ -1,5 +1,22 @@
-<div class="card">
-	<div class="member-img"></div>
-	<p class="member-name">{{name}}</p>
-	<div class="comment"></div>
+<div class="card-wrapper">
+	<div class="card">
+		<div class="person-img">
+			<i class="fa fa-user" aria-hidden="true"></i>
+		</div>
+		<p class="person-name">{{name}}</p>
+		<div class="person-info">
+			<p class="info-row">
+				<span class="info-title">group</span>
+				<span>{{group}}</span>
+			</p>
+			<p class="info-row">
+				<span class="info-title">age</span>
+				<span>{{age}}</span>
+			</p>
+			<p class="info-row">
+				<span class="info-title">e-mail</span>
+				<a v-bind:href="e_mail">{{e_mail}}</a>
+			</p>
+		</div>
+	</div>
 </div>
