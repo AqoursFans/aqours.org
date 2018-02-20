@@ -1,10 +1,10 @@
 <template src="./member.html"></template>
 <script>
-import PersonInfo from './Person'
+import Person from './Person'
 export default {
   name: 'Member',
   components: {
-    PersonInfo
+    Person
   },
   data () {
     return {

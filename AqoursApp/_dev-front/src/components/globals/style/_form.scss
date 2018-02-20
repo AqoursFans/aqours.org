@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+// ===============
+// ボタン
+// ===============
+
+.button {
+	width: auto;
+	display: inline-block;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	color: $_color-white;
+	border: none;
+	border-radius: $_radius-base;
+	background-color: $_color-gray;
+	cursor: pointer;
+	box-shadow: .125rem .125rem .25rem $_color-black;
+	transition: .2s ease-out;
+	&:hover {
+		background-color: $_color-gray-light;
+		box-shadow: .25rem .25rem .5rem $_color-black;
+	}
+}
+.button-primary {
+	background-color: $_color-teal;
+	&:hover {
+		background-color: $_color-teal-light;
+	}
+}
