@@ -3,19 +3,19 @@
 		<div class="person-img">
 			<i class="fa fa-user" aria-hidden="true"></i>
 		</div>
-		<p class="person-name">{{name}}</p>
+		<p class="person-name">{{info.name}}</p>
 		<div class="person-info">
 			<p class="info-row">
 				<span class="info-title">group</span>
-				<span>{{group}}</span>
+				<span>{{info.group}}</span>
 			</p>
 			<p class="info-row">
 				<span class="info-title">age</span>
-				<span>{{age}}</span>
+				<span>{{info.age}}</span>
 			</p>
 			<p class="info-row">
 				<span class="info-title">e-mail</span>
-				<a v-bind:href="e_mail">{{e_mail}}</a>
+				<a href="#">{{info.e_mail}}</a>
 			</p>
 		</div>
 	</div>

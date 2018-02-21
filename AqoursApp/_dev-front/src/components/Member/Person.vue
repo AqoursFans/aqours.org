@@ -2,14 +2,7 @@
 <script>
 export default {
   name: 'Person',
-  data () {
-    return {
-      name: 'Member Name',
-      group: 'develop',
-      age: '25',
-      e_mail: 'furi@ai.ai'
-    }
-  }
+  props: ['info']
 }
 </script>
 <style lang="scss" src="./person.scss"></style>
