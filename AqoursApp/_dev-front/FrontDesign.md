@@ -3,6 +3,8 @@
 ```
 _dev-front				// フロント開発ディレクトリ
 ├─ src					// フロントモジュール
+│  ├─ api				// サーバー通信処理群
+│  │  └─ member.js		// 社員ページ処理
 │  ├─ assets			// アセット(静的)ファイル	
 │  │  ├─ 
 │  │  └─
@@ -13,13 +15,13 @@ _dev-front				// フロント開発ディレクトリ
 │  │  └─ Member			// 社員一覧コンポーネント
 │  ├─ router			// ルーティング
 │  │  └─ index.js
-│  ├─ store				// ストア
-│  │  ├─ actions
-│  │  ├─ getters
-│  │  └─ modules
+│  ├─ store				// ストア（action、mutation、store同梱）
+│  │  ├─ modules		// 各ページ処理群	
+│  │  │  └─ member.js	// 社員ページ処理
+│  │  └─ index.js		// ストア連結
 │  ├─ utils				// 共通
 │  │  ├─ style			// 共通スタイル	
-│  │  ├─ async-api.js	// API共通処理？
+│  │  ├─ async-api.js	// ajax共通処理？
 │  │  └─ constants.js	// 定数？
 │  ├─ App.vue			// エントリーポイント
 │  └─ main.js
