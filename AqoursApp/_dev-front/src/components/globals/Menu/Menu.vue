@@ -2,12 +2,12 @@
 <template>
 	<menu>
 		<ul>
-			<li><a href="/">マイページ</a></li>
-			<li><a href="/Schedule">スケジュール</a></li>
-			<li><a href="/Member">社員一覧</a></li>
-			<li><a href="/Apply">各種申請</a></li>
-			<li><a href="/Board">掲示板</a></li>
-			<li><a href="/File">ファイル</a></li>
+			<li><router-link to="/">マイページ</router-link></li>
+			<li><router-link to="/Schedule">スケジュール</router-link></li>
+			<li><router-link to="/Member">社員一覧</router-link></li>
+			<li><router-link to="/Apply">各種申請</router-link></li>
+			<li><router-link to="/Board">掲示板</router-link></li>
+			<li><router-link to="/File">ファイル</router-link></li>
 		</ul>
 	</menu>
 </template>

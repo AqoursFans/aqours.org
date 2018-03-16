@@ -1,7 +1,7 @@
 <!-- Template -->
 <template>
 	<div class="card-wrapper">
-		<div class="card">
+		<div class="card" @click="showDetail(true)">
 			<div class="person-img">
 				<i class="fa fa-user" aria-hidden="true"></i>
 			</div>
@@ -27,7 +27,12 @@
 <script>
 export default {
   name: 'Person',
-  props: ['info']
+  props: ['info'],
+  methods: {
+    showDetail (status) {
+      this.$store.dispatch('toggleDetail', status)
+    }
+  }
 }
 </script>
 <!-- Style -->

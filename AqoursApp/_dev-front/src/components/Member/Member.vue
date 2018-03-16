@@ -2,20 +2,30 @@
 <template>
 	<div class="member-list">
 		<person v-for="person in member" :info="person" />
+		<person-detail v-show="showDetail" />
+		<person-edit v-show="showEdit" />
 	</div>
 </template>
 <!-- Script -->
 <script>
 import { mapGetters } from 'vuex'
 import Person from './Person'
+import PersonDetail from './PersonDetail'
+import PersonEdit from './PersonEdit'
 export default {
   name: 'Member',
   components: {
-    Person
+    'person': Person,
+    'person-detail': PersonDetail,
+    'person-edit': PersonEdit
   },
-  computed: mapGetters({
-    member: 'allMember'
-  }),
+  computed: {
+    ...mapGetters({
+      member: 'allMember',
+      showDetail: 'isDetail',
+      showEdit: 'isEdit'
+    })
+  },
   created () {
     this.$store.dispatch('getAllMember')
   }
