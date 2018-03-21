@@ -3,6 +3,9 @@
 	<div>
 		<div class="overlay" @click="hiddenEdit()"></div>
 		<div class="person-edit">
+			<div class="person-img">
+				<i class="fa fa-user" aria-hidden="true"></i>
+			</div>
 			<p>編集</p>
 			<button @click="showDetail()">戻る</button>
 		</div>
@@ -40,12 +43,28 @@ export default {
 		top: 50%;
 		left: 50%;
 		z-index: 1;
-		height: 40rem;
+		height: 45rem;
 		width: 40rem;
-		background-color: #fff;
+		background-color: #292929;
 		transform: translate(-20rem, -20rem);
-		p, button {
+		button {
 			color: #000;
+		}
+		.person-img {
+			width: 8rem;
+			height: 8rem;
+			background-color: #009688;
+			border-radius: 4rem;
+			display: inline-block;
+			position: absolute;
+			left: 15rem;
+			top: 2rem;
+			i {
+				display: block;
+				font-size: 6rem;
+				text-align: center;
+				padding-top: 1rem;
+			}
 		}
 	}
 </style>
