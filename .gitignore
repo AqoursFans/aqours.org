@@ -1,13 +1,3 @@
-AqoursApp/_dev-front/node_modules/
-AqoursApp/_dev-front/dist/
-AqoursApp/_dev-front/npm-debug.log*
-AqoursApp/_dev-front/yarn-debug.log*
-AqoursApp/_dev-front/yarn-error.log*
-AqoursApp/_dev-front/test/unit/coverage/
-AqoursApp/_dev-front/test/e2e/reports/
-AqoursApp/_dev-front/selenium-debug.log
-AqoursApp/www/
-
 # Editor directories and files
 .DS_Store
 .idea
@@ -16,3 +6,16 @@ AqoursApp/www/
 *.ntvs*
 *.njsproj
 *.sln
+
+# Application files
+AqoursApp/AqoursApp/_dev-front/node_modules/
+AqoursApp/AqoursApp/_dev-front/dist/
+AqoursApp/AqoursApp/_dev-front/npm-debug.log*
+AqoursApp/AqoursApp/_dev-front/yarn-debug.log*
+AqoursApp/AqoursApp/_dev-front/yarn-error.log*
+AqoursApp/AqoursApp/_dev-front/test/unit/coverage/
+AqoursApp/AqoursApp/_dev-front/test/e2e/reports/
+AqoursApp/AqoursApp/_dev-front/selenium-debug.log
+AqoursApp/AqoursApp/www/
+AqoursApp/AqoursApp/__pycache__/
+AqoursApp/db.sqlite3

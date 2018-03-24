@@ -9,13 +9,15 @@
 <script>
 import HeaderView from './components/globals/Header/Header'
 import MenuView from './components/globals/Menu/Menu'
+import store from './store'
 
 export default {
   name: 'app',
   components: {
     HeaderView,
     MenuView
-  }
+  },
+  store
 }
 </script>
 <style src="./assets/font-awesome/css/font-awesome.min.css"></style>
