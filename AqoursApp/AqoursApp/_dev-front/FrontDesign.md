@@ -40,17 +40,11 @@ _dev-front				// フロント開発ディレクトリ
 
 ## Components
 ページごとにコンポーネント化し、更に細分化する  
-コンポーネントは原則としてhtml、scss(css)、vue(javascript)の3ファイルを1セットとする  
+コンポーネントは原則としてvue(javascript)の1ファイルにする	  
 
 ### 共通コンポーネント
-* ヘッダー : Header
-	* header.html
-	* header.scss
-	* Header.vue
-* メニュー : Menu
-	* menu.html
-	* menu.scss
-	* Menu.vue
+* ヘッダー : Header.vue
+* メニュー : Menu.vue
 
 ### マイページコンポーネント
 ~TODO~
@@ -60,12 +54,8 @@ _dev-front				// フロント開発ディレクトリ
 
 ### 社員一覧コンポーネント
 * 一覧
-	* member.html
-	* member.scss
 	* Member.vue
 	* 詳細
-		* person.html
-		* person.scss
 		* Person.vue
 
 ### 各種申請コンポーネント
