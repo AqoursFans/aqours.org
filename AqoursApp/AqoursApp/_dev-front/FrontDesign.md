@@ -28,7 +28,6 @@ _dev-front				// フロント開発ディレクトリ
 ├─ build
 ├─ config
 ├─ node_modules
-├─ node_modules
 ├─ static
 ├─ test
 ├─ index.html
