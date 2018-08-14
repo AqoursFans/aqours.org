@@ -1,30 +1,67 @@
-# aqours.org
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+# FrontModule_DesignDocument
+## Directory structure
+```
+_dev-front				// フロント開発ディレクトリ
+├─ src					// フロントモジュール
+│  ├─ api				// サーバー通信処理群
+│  │  └─ member.js		// 社員ページ処理
+│  ├─ assets			// アセット(静的)ファイル	
+│  │  ├─ 
+│  │  └─
+│  ├─ components		// コンポーネント	
+│  │  ├─ globals		// 共通コンポーネント
+│  │  │  ├─ Header		// ヘッダーコンポーネント
+│  │  │  └─ Menu		// メニューコンポーネント
+│  │  └─ Member			// 社員一覧コンポーネント
+│  ├─ router			// ルーティング
+│  │  └─ index.js
+│  ├─ store				// ストア（action、mutation、store同梱）
+│  │  ├─ modules		// 各ページ処理群	
+│  │  │  └─ member.js	// 社員ページ処理
+│  │  └─ index.js		// ストア連結
+│  ├─ utils				// 共通
+│  │  ├─ style			// 共通スタイル	
+│  │  ├─ async-api.js	// ajax共通処理？
+│  │  └─ constants.js	// 定数？
+│  ├─ App.vue			// エントリーポイント
+│  └─ main.js
+├─ build
+├─ config
+├─ node_modules
+├─ static
+├─ test
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ README.md
+└─ FrontDesign.md
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Components
+ページごとにコンポーネント化し、更に細分化する  
+コンポーネントは原則としてvue(javascript)の1ファイルにする	  
+
+### 共通コンポーネント
+* ヘッダー : Header.vue
+* メニュー : Menu.vue
+
+### マイページコンポーネント
+~TODO~
+
+### スケジュールコンポーネント
+~TODO~
+
+### 社員一覧コンポーネント
+* 一覧
+	* Member.vue
+	* 詳細
+		* Person.vue
+
+### 各種申請コンポーネント
+~TODO~
+
+### 掲示板コンポーネント
+~TODO~
+
+### ファイルコンポーネント
+~TODO~
