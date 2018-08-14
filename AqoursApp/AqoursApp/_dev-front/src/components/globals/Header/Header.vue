@@ -27,7 +27,7 @@ export default {
 	left: 0;
 	width: 100%;
 	height: 5rem;
-	background-color: $_color-teal;
+	background: linear-gradient(to bottom, $_color-teal, #00BCD4);
 	z-index: 1;
 	h1 {
 		margin: 0;
