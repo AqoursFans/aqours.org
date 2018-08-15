@@ -2,12 +2,12 @@
 <template>
 	<menu>
 		<ul>
-			<li><router-link to="/">マイページ</router-link></li>
-			<li><router-link to="/Schedule">スケジュール</router-link></li>
-			<li><router-link to="/Member">社員一覧</router-link></li>
-			<li><router-link to="/Apply">各種申請</router-link></li>
-			<li><router-link to="/Board">掲示板</router-link></li>
-			<li><router-link to="/File">ファイル</router-link></li>
+			<li><router-link to="/" exact>マイページ</router-link></li>
+			<li><router-link to="/Schedule" exact>スケジュール</router-link></li>
+			<li><router-link to="/Member" exact>社員一覧</router-link></li>
+			<li><router-link to="/Apply" exact>各種申請</router-link></li>
+			<li><router-link to="/Board" exact>掲示板</router-link></li>
+			<li><router-link to="/File" exact>ファイル</router-link></li>
 		</ul>
 	</menu>
 </template>
@@ -26,24 +26,27 @@ menu {
 	padding-top: 2rem;
 	left: 0;
 	top: 5rem;
-	background-color: #212121;
-	border-right: 1px solid #009688;
+	background-color: #000;
 	li {
 		width: 100%;
 		text-align: center;
 		display: inline-block;
 		list-style: none;
 		cursor: pointer;
-		&:hover {
-			background-color: #292929;
-			border-bottom: 2px solid #009688;
+		a {
+			text-decoration: none;
+			color: white;
+			display: block;
+			padding: 1.5rem 1rem;
+			&:hover {
+				background-color: #2f2f2f;
+				border-bottom: 1px solid #00BCD4;
+			}
 		}
 	}
-	a {
-		text-decoration: none;
-		color: white;
-		display: block;
-		padding: 1.5rem 1rem;
+	.router-link-active {
+		background-color: #2f2f2f;
+		border-bottom: 1px solid #00BCD4;
 	}
 }
 </style>

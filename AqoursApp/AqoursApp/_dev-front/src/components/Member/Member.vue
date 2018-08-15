@@ -42,10 +42,4 @@ export default {
 		clear: both;
 	}
 }
-menu {
-	li:nth-child(3) {
-		background-color: #292929;
-		border-bottom: 2px solid #009688;
-	}
-}
 </style>
