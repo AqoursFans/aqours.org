@@ -1,21 +1,22 @@
 <template>
   <div id="app">
+  <v-app id="inspire" dark>
     <header-view />
-    <menu-view />
-    <router-view/>
+    <v-content>
+      <router-view/>
+    </v-content>
+  </v-app>
   </div>
 </template>
 
 <script>
-import HeaderView from './components/globals/Header/Header'
-import MenuView from './components/globals/Menu/Menu'
-import store from './store'
+import HeaderView from './components/globals/Header/Header';
+import store from './store';
 
 export default {
   name: 'app',
   components: {
     HeaderView,
-    MenuView
   },
   store
 }
@@ -28,8 +29,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 5rem;
-  margin-left: 10rem;
 }
 </style>
