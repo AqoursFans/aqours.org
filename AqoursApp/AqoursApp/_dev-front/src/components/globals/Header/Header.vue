@@ -35,13 +35,13 @@
     <v-spacer />
     <v-tooltip bottom>
       <v-btn icon slot="activator">
-        <i class="fa fa-wrench" aria-hidden="true"></i>
+        <v-icon>build</v-icon>
       </v-btn>
       <span>設定</span>
     </v-tooltip>
     <v-tooltip bottom>
       <v-btn icon slot="activator">
-        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        <v-icon>exit_to_app</v-icon>
       </v-btn>
       <span>ログアウト</span>
     </v-tooltip>
@@ -72,9 +72,6 @@
     margin: 0;
     vertical-align: middle;
   }
-  .fa {
-    font-size: 1.25rem!important;
-  }
 }
 .v-list {
   padding-top: 0;
@@ -97,6 +94,5 @@
       border-bottom: 1px solid #00BCD4;
     }
   }
-}
 }
 </style>

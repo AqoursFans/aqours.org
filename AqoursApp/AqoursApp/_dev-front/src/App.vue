@@ -21,7 +21,6 @@ export default {
   store
 }
 </script>
-<style src="./assets/font-awesome/css/font-awesome.min.css"></style>
 <style lang="scss" src="./components/globals/style/style.scss"></style>
 <style>
 #app {
