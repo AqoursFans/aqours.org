@@ -2,7 +2,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
-  entry: ['babel-polyfill', `${__dirname}/src/index.js`],
+  entry: `${__dirname}/src/index.js`,
   output: {
     path: `${__dirname}/public`,
     filename: 'index.js'
@@ -19,8 +19,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: [['env', {'modules': false}]],
-              plugins: ["transform-object-rest-spread"]
+              presets: ['@babel/preset-env']
             }
           }
         ],
