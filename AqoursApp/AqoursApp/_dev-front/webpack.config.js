@@ -4,7 +4,9 @@ module.exports = {
   mode: 'production',
   entry: `${__dirname}/src/index.js`,
   output: {
-    path: `${__dirname}/public`,
+    path: process.env.npm_lifecycle_event === 'start'
+      ? `${__dirname}/public`
+      : `${__dirname}/../www`,
     filename: 'index.js'
   },
   module: {
